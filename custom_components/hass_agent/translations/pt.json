@@ -1,0 +1,41 @@
+{
+    "config": {
+        "flow_title": "{name}",
+        "abort": {
+            "no_devices_found": "Não foram encontrados equipamentos na rede"
+        },
+        "error": {
+            "cannot_connect": "Falha na ligação"
+        },
+        "step": {
+            "confirm": {
+                "description": "Deseja iniciar a configuração?"
+            },
+            "local_api": {
+                "title": "HASS.Agent API",
+                "description": "Este addon adiciona um equipamento ao HA. Atualmente SÓ as notificações iram  funcionar.Caso queiras o leitor de media usar a decoberta automática.",
+                "data": {
+                    "host": "Endereço",
+                    "port": "Porta",
+                    "ssl": "Usar SSL"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "default_notification_title": "Notificação por defeito Deixe um espaço em branco para desativar."
+                },
+                "title": "Configurar HASS.Agent"
+            }
+        }
+    },
+    "device_automation": {
+        "trigger_type": {
+          "notifications_mqtt": "Quando uma notificação com uma acção especifica é efetuada (MQTT)",
+          "notifications_event": "Quando uma notificação com uma acção especifica é efetuada (Evento HA)"
+        }
+    }
+}
